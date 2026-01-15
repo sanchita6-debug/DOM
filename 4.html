@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read value from input tag</title>
+</head>
+<body>
+    <input type="text" value="" id="head" placeholder="enter your name">
+    <button onclick="getName()">submit</button>
+</body>
+</html>
+
+<script>
+function getName(){
+    //step1 catch/select the input element 
+    const ip = document.getElementById("head")
+    console.log(ip);
+
+    //step2 get the data from input tag
+    const data = ip.value;
+    console.log(data);
+    alert(data)
+}
+</script>
