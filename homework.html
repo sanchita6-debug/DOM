@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btns{
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="1st" value="" placeholder="enter 1st number">
+    <input type="text" id="2nd" value="" placeholder="enter 2nd number">
+    
+    <div class="btns">
+        
+        <button onclick="add()">Add</button> 
+        <button onclick="sub()">Subtract</button>
+        <button onclick="mul()">Multiply</button>
+        <button onclick="div()">Divide</button>
+    </div>
+    <script>
+        function add(){
+           const no1 = Number(document.getElementById("1st").value);
+           const no2 = Number(document.getElementById("2nd").value);
+           const sum = no1 + no2; 
+           alert(sum);
+           
+
+        }
+        function sub(){
+           const no1 = document.getElementById("1st").value
+           const no2 = document.getElementById("2nd").value
+           const sub = no1 - no2 
+           alert(sub)
+        } 
+        function mul(){
+           const no1 = document.getElementById("1st").value
+           const no2 = document.getElementById("2nd").value
+           const pro = no1 * no2 
+           alert(pro)
+        }
+        function div(){
+           const no1 = document.getElementById("1st").value
+           const no2 = document.getElementById("2nd").value
+           const div = no1 / no2 
+           alert(div)
+        }
+    </script>
+</body>
+</html>
