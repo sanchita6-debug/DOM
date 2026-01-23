@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>introduction to local storage</title>
 </head>
 <body>
-    <h1>introduction to dom</h1>
+   <h1>LS</h1> 
+   <!--1. set/write value into ls-->
+
+
 </body>
 </html>
 
 <script>
-    console.log(document, typeof document);
-    console.log(document.body);
-    console.log(document.title);
-    console.log(document.head);
-    console.log(document.body.h1);//undefined
+    //<!--1. set/write value into ls-->
+    localStorage.setItem("name","sanchita")
+    localStorage.setItem("id","aa")
+
+    //2. get item
+    let nm = localStorage.getItem("name")
+    console.log();
+
+    //remove item
+    localStorage.removeItem("id")
+
+    //clear()
+    localStorage.clear()
+    
 </script>
