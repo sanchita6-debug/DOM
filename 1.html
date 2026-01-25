@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>introduction to local storage</title>
+    <title>Document</title>
 </head>
 <body>
-   <h1>LS</h1> 
-   <!--1. set/write value into ls-->
-
-
+    <!--<div>
+        <img src="c:\Users\Sanchita\OneDrive\Pictures\Camera Roll\WIN_20260103_16_50_23_Pro.jpg" alt="">
+    </div>-->
 </body>
 </html>
 
 <script>
-    //<!--1. set/write value into ls-->
-    localStorage.setItem("name","sanchita")
-    localStorage.setItem("id","aa")
-
-    //2. get item
-    let nm = localStorage.getItem("name")
-    console.log();
-
-    //remove item
-    localStorage.removeItem("id")
-
-    //clear()
-    localStorage.clear()
+    const el = document.createElement("div");
+    el.setAttribute("class", "cont");
+    console.log(el);
     
+
+const image = document.createElement("img");
+image.setAttribute("src","c:\Users\Sanchita\OneDrive\Pictures\Camera Roll\WIN_20260103_16_50_23_Pro.jpg")
+console.log(image);
+
+el.append(image)
+document.querySelector("body").append(el)
+
 </script>
