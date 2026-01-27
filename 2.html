@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>addEventListner</title>
 </head>
+
 <body>
-    <h1 id="head">hello world</h1>
+    <button id="btn" onclick="greet()">click</button>
+    <button id="sub">submit</button>
 </body>
 </html>
-
 <script>
-    // step1 select the element
-    const heading = document.getElementById("head");
-    console.log(heading);
+    // function greet() {
+    //     const el = document.querySelector("#btn");
+    //     console.log(el);
+    //     console.log(el.textContent);
+    // }
 
-    //step2 read value from element
-    const ans = heading.innerText;
-    console.log(ans);
+    const el = document.querySelector("#sub");
+    console.log(el);
+    el.addEventListener("click", hello);
 
-    //step3 write/update element value
-    heading.innerText = "welcome to dom class"
+    function hello() {
+        alert("hello jii")
+    }
+
 </script>
